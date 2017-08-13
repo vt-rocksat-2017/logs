@@ -1,0 +1,184 @@
+2017-06-12 21:21:01.789051 UTC - MainThread - INFO - Logger Initialized
+2017-06-12 21:21:01.789919 UTC - MainThread - INFO - Started Main Loop...
+2017-06-12 21:21:01.790406 UTC - MainThread - INFO - Listening for new command connection...
+2017-06-12 21:22:18.280518 UTC - MainThread - INFO - Connection received from ('192.168.20.40', 42660)
+2017-06-12 21:22:18.281191 UTC - MainThread - INFO - Setup Flowgraph Manager
+2017-06-12 21:22:18.282054 UTC - MainThread - INFO - setting up UDPDataReporter
+2017-06-12 21:22:18.285334 UTC - data_reporter - INFO - UDPDataReporter ready to send to 192.168.20.40:1337
+2017-06-12 21:22:18.327606 UTC - MainThread - INFO - Received Command: ADSB
+2017-06-12 21:22:18.328226 UTC - MainThread - INFO - Creating Top Block Thread: adsb
+2017-06-12 21:22:18.328737 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1337
+2017-06-12 21:22:18.331175 UTC - MainThread - INFO - Launching Top Block Thread: adsb
+2017-06-12 21:22:18.332073 UTC - adsb_thread - INFO - Starting adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:22:18.339205 UTC - adsb_thread - INFO - Launching subprocess: 977
+2017-06-12 21:22:48.568863 UTC - MainThread - INFO - Received Command: AIS
+2017-06-12 21:22:48.569731 UTC - MainThread - INFO - Stopping adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:22:48.570376 UTC - MainThread - INFO - Terminating subprocess: 977
+2017-06-12 21:22:48.571359 UTC - MainThread - INFO - Terminating Logger: adsb
+2017-06-12 21:22:48.582051 UTC - adsb_thread - INFO - adsb radio terminated
+2017-06-12 21:22:48.583354 UTC - MainThread - INFO - Creating Top Block Thread: ais
+2017-06-12 21:22:48.583964 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1338
+2017-06-12 21:22:48.586575 UTC - MainThread - INFO - Launching Top Block Thread: ais
+2017-06-12 21:22:48.587522 UTC - ais_thread - INFO - Starting ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:22:48.594729 UTC - ais_thread - INFO - Launching subprocess: 997
+2017-06-12 21:23:18.571172 UTC - MainThread - INFO - Received Command: ADSB
+2017-06-12 21:23:18.571986 UTC - MainThread - INFO - Stopping ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:23:18.572589 UTC - MainThread - INFO - Sending Character to terminate AIS Flowgraph
+2017-06-12 21:23:18.578061 UTC - MainThread - INFO - Terminating subprocess: 997
+2017-06-12 21:23:18.579025 UTC - MainThread - INFO - Terminating Logger: ais
+2017-06-12 21:23:18.594439 UTC - ais_thread - INFO - ais radio terminated
+2017-06-12 21:23:18.595547 UTC - MainThread - INFO - Creating Top Block Thread: adsb
+2017-06-12 21:23:18.596155 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1337
+2017-06-12 21:23:18.601183 UTC - MainThread - INFO - Launching Top Block Thread: adsb
+2017-06-12 21:23:18.602062 UTC - adsb_thread - INFO - Starting adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:23:18.609561 UTC - adsb_thread - INFO - Launching subprocess: 1036
+2017-06-12 21:23:48.599299 UTC - MainThread - INFO - Received Command: AIS
+2017-06-12 21:23:48.600153 UTC - MainThread - INFO - Stopping adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:23:48.600791 UTC - MainThread - INFO - Terminating subprocess: 1036
+2017-06-12 21:23:48.601749 UTC - MainThread - INFO - Terminating Logger: adsb
+2017-06-12 21:23:48.612798 UTC - adsb_thread - INFO - adsb radio terminated
+2017-06-12 21:23:48.613899 UTC - MainThread - INFO - Creating Top Block Thread: ais
+2017-06-12 21:23:48.614494 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1338
+2017-06-12 21:23:48.617012 UTC - MainThread - INFO - Launching Top Block Thread: ais
+2017-06-12 21:23:48.617872 UTC - ais_thread - INFO - Starting ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:23:48.625282 UTC - ais_thread - INFO - Launching subprocess: 1056
+2017-06-12 21:24:18.632955 UTC - MainThread - INFO - Received Command: ADSB
+2017-06-12 21:24:18.633853 UTC - MainThread - INFO - Stopping ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:24:18.634518 UTC - MainThread - INFO - Sending Character to terminate AIS Flowgraph
+2017-06-12 21:24:18.639364 UTC - MainThread - INFO - Terminating subprocess: 1056
+2017-06-12 21:24:18.640349 UTC - MainThread - INFO - Terminating Logger: ais
+2017-06-12 21:24:18.654730 UTC - ais_thread - INFO - ais radio terminated
+2017-06-12 21:24:18.655840 UTC - MainThread - INFO - Creating Top Block Thread: adsb
+2017-06-12 21:24:18.656447 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1337
+2017-06-12 21:24:18.659017 UTC - MainThread - INFO - Launching Top Block Thread: adsb
+2017-06-12 21:24:18.659875 UTC - adsb_thread - INFO - Starting adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:24:18.667337 UTC - adsb_thread - INFO - Launching subprocess: 1095
+2017-06-12 21:24:48.653275 UTC - MainThread - INFO - Received Command: AIS
+2017-06-12 21:24:48.654202 UTC - MainThread - INFO - Stopping adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:24:48.654877 UTC - MainThread - INFO - Terminating subprocess: 1095
+2017-06-12 21:24:48.655862 UTC - MainThread - INFO - Terminating Logger: adsb
+2017-06-12 21:24:48.666513 UTC - adsb_thread - INFO - adsb radio terminated
+2017-06-12 21:24:48.667682 UTC - MainThread - INFO - Creating Top Block Thread: ais
+2017-06-12 21:24:48.668329 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1338
+2017-06-12 21:24:48.673440 UTC - MainThread - INFO - Launching Top Block Thread: ais
+2017-06-12 21:24:48.674328 UTC - ais_thread - INFO - Starting ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:24:48.681675 UTC - ais_thread - INFO - Launching subprocess: 1115
+2017-06-12 21:25:18.663354 UTC - MainThread - INFO - Received Command: ADSB
+2017-06-12 21:25:18.664274 UTC - MainThread - INFO - Stopping ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:25:18.664862 UTC - MainThread - INFO - Sending Character to terminate AIS Flowgraph
+2017-06-12 21:25:18.665449 UTC - MainThread - INFO - Terminating subprocess: 1115
+2017-06-12 21:25:18.668272 UTC - MainThread - INFO - Terminating Logger: ais
+2017-06-12 21:25:18.682576 UTC - ais_thread - INFO - ais radio terminated
+2017-06-12 21:25:18.683680 UTC - MainThread - INFO - Creating Top Block Thread: adsb
+2017-06-12 21:25:18.684292 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1337
+2017-06-12 21:25:18.686836 UTC - MainThread - INFO - Launching Top Block Thread: adsb
+2017-06-12 21:25:18.687707 UTC - adsb_thread - INFO - Starting adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:25:18.695179 UTC - adsb_thread - INFO - Launching subprocess: 1154
+2017-06-12 21:25:48.693176 UTC - MainThread - INFO - Received Command: AIS
+2017-06-12 21:25:48.694031 UTC - MainThread - INFO - Stopping adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:25:48.694663 UTC - MainThread - INFO - Terminating subprocess: 1154
+2017-06-12 21:25:48.695615 UTC - MainThread - INFO - Terminating Logger: adsb
+2017-06-12 21:25:48.706190 UTC - adsb_thread - INFO - adsb radio terminated
+2017-06-12 21:25:48.707384 UTC - MainThread - INFO - Creating Top Block Thread: ais
+2017-06-12 21:25:48.707982 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1338
+2017-06-12 21:25:48.710516 UTC - MainThread - INFO - Launching Top Block Thread: ais
+2017-06-12 21:25:48.711397 UTC - ais_thread - INFO - Starting ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:25:48.718748 UTC - ais_thread - INFO - Launching subprocess: 1174
+2017-06-12 21:26:18.729701 UTC - MainThread - INFO - Received Command: ADSB
+2017-06-12 21:26:18.730525 UTC - MainThread - INFO - Stopping ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:26:18.731071 UTC - MainThread - INFO - Sending Character to terminate AIS Flowgraph
+2017-06-12 21:26:18.731646 UTC - MainThread - INFO - Terminating subprocess: 1174
+2017-06-12 21:26:18.735769 UTC - MainThread - INFO - Terminating Logger: ais
+2017-06-12 21:26:18.749599 UTC - ais_thread - INFO - ais radio terminated
+2017-06-12 21:26:18.750701 UTC - MainThread - INFO - Creating Top Block Thread: adsb
+2017-06-12 21:26:18.751310 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1337
+2017-06-12 21:26:18.753927 UTC - MainThread - INFO - Launching Top Block Thread: adsb
+2017-06-12 21:26:18.754795 UTC - adsb_thread - INFO - Starting adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:26:18.762103 UTC - adsb_thread - INFO - Launching subprocess: 1213
+2017-06-12 21:21:01.776455 UTC - MainThread - INFO - Logger Initialized
+2017-06-12 21:21:01.778188 UTC - MainThread - INFO - Started Main Loop...
+2017-06-12 21:21:01.778695 UTC - MainThread - INFO - Listening for new command connection...
+2017-06-12 21:22:18.427000 UTC - MainThread - INFO - Connection received from ('192.168.20.40', 35621)
+2017-06-12 21:22:18.427668 UTC - MainThread - INFO - Setup Flowgraph Manager
+2017-06-12 21:22:18.428537 UTC - MainThread - INFO - setting up UDPDataReporter
+2017-06-12 21:22:18.431812 UTC - data_reporter - INFO - UDPDataReporter ready to send to 192.168.20.40:1337
+2017-06-12 21:22:18.472388 UTC - MainThread - INFO - Received Command: ADSB
+2017-06-12 21:22:18.473001 UTC - MainThread - INFO - Creating Top Block Thread: adsb
+2017-06-12 21:22:18.473513 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1337
+2017-06-12 21:22:18.475987 UTC - MainThread - INFO - Launching Top Block Thread: adsb
+2017-06-12 21:22:18.476893 UTC - adsb_thread - INFO - Starting adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:22:18.483859 UTC - adsb_thread - INFO - Launching subprocess: 974
+2017-06-12 21:22:48.502413 UTC - MainThread - INFO - Received Command: AIS
+2017-06-12 21:22:48.503242 UTC - MainThread - INFO - Stopping adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:22:48.503827 UTC - MainThread - INFO - Terminating subprocess: 974
+2017-06-12 21:22:48.504806 UTC - MainThread - INFO - Terminating Logger: adsb
+2017-06-12 21:22:48.515540 UTC - adsb_thread - INFO - adsb radio terminated
+2017-06-12 21:22:48.516748 UTC - MainThread - INFO - Creating Top Block Thread: ais
+2017-06-12 21:22:48.517419 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1338
+2017-06-12 21:22:48.520053 UTC - MainThread - INFO - Launching Top Block Thread: ais
+2017-06-12 21:22:48.521042 UTC - ais_thread - INFO - Starting ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:22:48.528333 UTC - ais_thread - INFO - Launching subprocess: 994
+2017-06-12 21:23:18.624866 UTC - MainThread - INFO - Received Command: ADSB
+2017-06-12 21:23:18.625782 UTC - MainThread - INFO - Stopping ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:23:18.626445 UTC - MainThread - INFO - Sending Character to terminate AIS Flowgraph
+2017-06-12 21:23:18.631967 UTC - MainThread - INFO - Terminating subprocess: 994
+2017-06-12 21:23:18.632952 UTC - MainThread - INFO - Terminating Logger: ais
+2017-06-12 21:23:18.648191 UTC - ais_thread - INFO - ais radio terminated
+2017-06-12 21:23:18.649316 UTC - MainThread - INFO - Creating Top Block Thread: adsb
+2017-06-12 21:23:18.649934 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1337
+2017-06-12 21:23:18.652589 UTC - MainThread - INFO - Launching Top Block Thread: adsb
+2017-06-12 21:23:18.653470 UTC - adsb_thread - INFO - Starting adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:23:18.660827 UTC - adsb_thread - INFO - Launching subprocess: 1033
+2017-06-12 21:23:48.617313 UTC - MainThread - INFO - Received Command: AIS
+2017-06-12 21:23:48.618255 UTC - MainThread - INFO - Stopping adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:23:48.618965 UTC - MainThread - INFO - Terminating subprocess: 1033
+2017-06-12 21:23:48.620014 UTC - MainThread - INFO - Terminating Logger: adsb
+2017-06-12 21:23:48.630898 UTC - adsb_thread - INFO - adsb radio terminated
+2017-06-12 21:23:48.632086 UTC - MainThread - INFO - Creating Top Block Thread: ais
+2017-06-12 21:23:48.632793 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1338
+2017-06-12 21:23:48.635387 UTC - MainThread - INFO - Launching Top Block Thread: ais
+2017-06-12 21:23:48.636294 UTC - ais_thread - INFO - Starting ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:23:48.643667 UTC - ais_thread - INFO - Launching subprocess: 1053
+2017-06-12 21:24:18.658855 UTC - MainThread - INFO - Received Command: ADSB
+2017-06-12 21:24:18.659803 UTC - MainThread - INFO - Stopping ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:24:18.660525 UTC - MainThread - INFO - Sending Character to terminate AIS Flowgraph
+2017-06-12 21:24:18.661286 UTC - MainThread - INFO - Terminating subprocess: 1053
+2017-06-12 21:24:18.664222 UTC - MainThread - INFO - Terminating Logger: ais
+2017-06-12 21:24:18.679062 UTC - ais_thread - INFO - ais radio terminated
+2017-06-12 21:24:18.680220 UTC - MainThread - INFO - Creating Top Block Thread: adsb
+2017-06-12 21:24:18.680854 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1337
+2017-06-12 21:24:18.683422 UTC - MainThread - INFO - Launching Top Block Thread: adsb
+2017-06-12 21:24:18.684300 UTC - adsb_thread - INFO - Starting adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:24:18.691704 UTC - adsb_thread - INFO - Launching subprocess: 1092
+2017-06-12 21:24:48.680010 UTC - MainThread - INFO - Received Command: AIS
+2017-06-12 21:24:48.680919 UTC - MainThread - INFO - Stopping adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:24:48.681552 UTC - MainThread - INFO - Terminating subprocess: 1092
+2017-06-12 21:24:48.682494 UTC - MainThread - INFO - Terminating Logger: adsb
+2017-06-12 21:24:48.693099 UTC - adsb_thread - INFO - adsb radio terminated
+2017-06-12 21:24:48.694306 UTC - MainThread - INFO - Creating Top Block Thread: ais
+2017-06-12 21:24:48.694901 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1338
+2017-06-12 21:24:48.697443 UTC - MainThread - INFO - Launching Top Block Thread: ais
+2017-06-12 21:24:48.698335 UTC - ais_thread - INFO - Starting ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:24:48.705751 UTC - ais_thread - INFO - Launching subprocess: 1112
+2017-06-12 21:25:18.701549 UTC - MainThread - INFO - Received Command: ADSB
+2017-06-12 21:25:18.702406 UTC - MainThread - INFO - Stopping ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:25:18.702967 UTC - MainThread - INFO - Sending Character to terminate AIS Flowgraph
+2017-06-12 21:25:18.708423 UTC - MainThread - INFO - Terminating subprocess: 1112
+2017-06-12 21:25:18.709505 UTC - MainThread - INFO - Terminating Logger: ais
+2017-06-12 21:25:18.722882 UTC - ais_thread - INFO - ais radio terminated
+2017-06-12 21:25:18.724005 UTC - MainThread - INFO - Creating Top Block Thread: adsb
+2017-06-12 21:25:18.724620 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1337
+2017-06-12 21:25:18.729686 UTC - MainThread - INFO - Launching Top Block Thread: adsb
+2017-06-12 21:25:18.730653 UTC - adsb_thread - INFO - Starting adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:25:18.737946 UTC - adsb_thread - INFO - Launching subprocess: 1151
+2017-06-12 21:25:48.725275 UTC - MainThread - INFO - Received Command: AIS
+2017-06-12 21:25:48.726164 UTC - MainThread - INFO - Stopping adsb Radio: /home/root/scripts/v2.1/modes_rx --gain 10
+2017-06-12 21:25:48.726807 UTC - MainThread - INFO - Terminating subprocess: 1151
+2017-06-12 21:25:48.727841 UTC - MainThread - INFO - Terminating Logger: adsb
+2017-06-12 21:25:48.738343 UTC - adsb_thread - INFO - adsb radio terminated
+2017-06-12 21:25:48.739564 UTC - MainThread - INFO - Creating Top Block Thread: ais
+2017-06-12 21:25:48.740213 UTC - MainThread - INFO - Updating UDPDataReporter Target:  192.168.20.40:1338
+2017-06-12 21:25:48.742823 UTC - MainThread - INFO - Launching Top Block Thread: ais
+2017-06-12 21:25:48.743704 UTC - ais_thread - INFO - Starting ais Radio: /home/root/waveforms/ais_rx.py --rx-gain 10
+2017-06-12 21:25:48.751083 UTC - ais_thread - INFO - Launching subprocess: 1171
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

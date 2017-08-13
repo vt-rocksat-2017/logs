@@ -1,0 +1,226 @@
+2017-06-17 21:04:44.350080 UTC - MainThread - INFO - Logger Initialized
+2017-06-17 21:04:44.351550 UTC - MainThread - INFO - Launched main thread
+2017-06-17 21:04:44.352107 UTC - MainThread - INFO - Setting up Payload Radio C2 Thread
+2017-06-17 21:04:44.353006 UTC - MainThread - INFO - Initializing Payload Radio C2 Thread...
+2017-06-17 21:04:44.353818 UTC - MainThread - INFO - Setting up ADSB Data Handler Thread
+2017-06-17 21:04:44.354707 UTC - MainThread - INFO - Initializing ADSB Data Handler
+2017-06-17 21:04:44.355523 UTC - MainThread - INFO - Setting up AIS Data Handler Thread
+2017-06-17 21:04:44.356379 UTC - MainThread - INFO - Initializing AIS Data Handler
+2017-06-17 21:04:44.357176 UTC - MainThread - INFO - Setting up Serial Thread
+2017-06-17 21:04:44.358072 UTC - MainThread - INFO - Initializing Serial Data Handler
+2017-06-17 21:04:44.358939 UTC - MainThread - INFO - Setting up Radio Thread
+2017-06-17 21:04:44.359869 UTC - MainThread - INFO - Initializing Radio Thread...
+2017-06-17 21:04:44.366613 UTC - MainThread - INFO - Setting up GNU Radio Flowgraph...
+2017-06-17 21:05:33.105260 UTC - MainThread - INFO - GNU Radio Flowgraph Launched
+2017-06-17 21:05:33.106096 UTC - MainThread - INFO - Launching Payload Radio C2 Thread
+2017-06-17 21:05:33.119404 UTC - MainThread - INFO - Launching ADSB Data Handler Thread
+2017-06-17 21:05:33.120364 UTC - pld_c2 - INFO - Payload Radio C2 Thread Running...
+2017-06-17 21:05:33.122474 UTC - MainThread - INFO - Launching AIS Data Handler Thread
+2017-06-17 21:05:33.121813 UTC - pld_c2 - INFO - Connected To Payload Radio on: 192.168.20.41:2600
+2017-06-17 21:05:33.133370 UTC - ADSB_handler - INFO - Ready to receive ADSB data on: 0.0.0.0:1337
+2017-06-17 21:05:33.134766 UTC - MainThread - INFO - Launching Serial Handler thread
+2017-06-17 21:05:33.135756 UTC - AIS_handler - INFO - Ready to receive AIS data on: 0.0.0.0:1338
+2017-06-17 21:05:33.150818 UTC - MainThread - INFO - Launching Radio thread
+2017-06-17 21:05:33.163917 UTC - MainThread - INFO - Successfully Launched Threads, Switching to ADSB Mode
+2017-06-17 21:05:33.164574 UTC - MainThread - INFO - Switching Mode from BOOT to adsb
+2017-06-17 21:05:33.166277 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: ADSB
+
+2017-06-17 21:05:34.152276 UTC - SERIAL_handler - INFO - Serial Thread Running...
+2017-06-17 21:05:35.236162 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:05:35.491261 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:05:37.169203 UTC - radio - INFO - Radio Thread Running...
+2017-06-17 21:05:37.171423 UTC - radio - INFO - Setup Socket, attempting to connect to GNU Radio....
+2017-06-17 21:05:37.185699 UTC - radio - INFO - Connected to GNU Radio Flowgraph at: 0.0.0.0:52001
+2017-06-17 21:05:47.939117 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:05:47.940065 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:05:48.990624 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:05:49.250531 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:06:03.172836 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:06:03.173563 UTC - Watchdog - INFO - Switching Mode from ADSB to AIS
+2017-06-17 21:06:03.190856 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: AIS
+
+2017-06-17 21:06:06.384236 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:06:06.385044 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:06:07.394413 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:06:07.646842 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:06:24.817328 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:06:24.819066 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:06:25.839354 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:06:26.097719 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:06:33.215172 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:06:33.215910 UTC - Watchdog - INFO - Switching Mode from AIS to ADSB
+2017-06-17 21:06:33.250722 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: ADSB
+
+2017-06-17 21:06:43.241306 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:06:43.250549 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:06:44.263600 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:06:44.526534 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:07:01.683327 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:07:01.688595 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:07:02.749357 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:07:03.001994 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:07:03.258237 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:07:03.259054 UTC - Watchdog - INFO - Switching Mode from ADSB to AIS
+2017-06-17 21:07:03.261272 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: AIS
+
+2017-06-17 21:07:20.095296 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:07:20.096186 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:07:21.335365 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:07:21.588867 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:07:33.284016 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:07:33.284683 UTC - Watchdog - INFO - Switching Mode from AIS to ADSB
+2017-06-17 21:07:33.286428 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: ADSB
+
+2017-06-17 21:07:38.797732 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:07:38.798591 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:07:39.825782 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:07:40.086038 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:07:57.235368 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:07:57.236547 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:07:58.251106 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:07:58.504545 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:08:03.308845 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:08:03.309535 UTC - Watchdog - INFO - Switching Mode from ADSB to AIS
+2017-06-17 21:08:03.315875 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: AIS
+
+2017-06-17 21:08:15.651710 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:08:15.665888 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:08:16.696628 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:08:16.953659 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:08:33.338932 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:08:33.342185 UTC - Watchdog - INFO - Switching Mode from AIS to ADSB
+2017-06-17 21:08:33.350302 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: ADSB
+
+2017-06-17 21:08:34.081599 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:08:34.082460 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:08:35.098475 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:08:35.362482 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:08:52.518339 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:08:52.519214 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:08:53.562535 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:08:53.815649 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:09:03.365504 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:09:03.366213 UTC - Watchdog - INFO - Switching Mode from ADSB to AIS
+2017-06-17 21:09:03.374853 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: AIS
+
+2017-06-17 21:09:10.962346 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:09:10.966894 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:09:11.980922 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:09:12.240142 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          2017-06-17 21:04:44.377783 UTC - MainThread - INFO - Logger Initialized
+2017-06-17 21:04:44.381647 UTC - MainThread - INFO - Launched main thread
+2017-06-17 21:04:44.382232 UTC - MainThread - INFO - Setting up Payload Radio C2 Thread
+2017-06-17 21:04:44.383134 UTC - MainThread - INFO - Initializing Payload Radio C2 Thread...
+2017-06-17 21:04:44.383958 UTC - MainThread - INFO - Setting up ADSB Data Handler Thread
+2017-06-17 21:04:44.384854 UTC - MainThread - INFO - Initializing ADSB Data Handler
+2017-06-17 21:04:44.385681 UTC - MainThread - INFO - Setting up AIS Data Handler Thread
+2017-06-17 21:04:44.386545 UTC - MainThread - INFO - Initializing AIS Data Handler
+2017-06-17 21:04:44.387346 UTC - MainThread - INFO - Setting up Serial Thread
+2017-06-17 21:04:44.388245 UTC - MainThread - INFO - Initializing Serial Data Handler
+2017-06-17 21:04:44.389055 UTC - MainThread - INFO - Setting up Radio Thread
+2017-06-17 21:04:44.390028 UTC - MainThread - INFO - Initializing Radio Thread...
+2017-06-17 21:04:44.396576 UTC - MainThread - INFO - Setting up GNU Radio Flowgraph...
+2017-06-17 21:05:33.127142 UTC - MainThread - INFO - GNU Radio Flowgraph Launched
+2017-06-17 21:05:33.128135 UTC - MainThread - INFO - Launching Payload Radio C2 Thread
+2017-06-17 21:05:33.133258 UTC - pld_c2 - INFO - Payload Radio C2 Thread Running...
+2017-06-17 21:05:33.134546 UTC - MainThread - INFO - Launching ADSB Data Handler Thread
+2017-06-17 21:05:33.135579 UTC - pld_c2 - INFO - Connected To Payload Radio on: 192.168.20.41:2600
+2017-06-17 21:05:33.143859 UTC - ADSB_handler - INFO - Ready to receive ADSB data on: 0.0.0.0:1337
+2017-06-17 21:05:33.144723 UTC - MainThread - INFO - Launching AIS Data Handler Thread
+2017-06-17 21:05:33.146094 UTC - AIS_handler - INFO - Ready to receive AIS data on: 0.0.0.0:1338
+2017-06-17 21:05:33.146734 UTC - MainThread - INFO - Launching Serial Handler thread
+2017-06-17 21:05:33.169019 UTC - MainThread - INFO - Launching Radio thread
+2017-06-17 21:05:33.179704 UTC - MainThread - INFO - Successfully Launched Threads, Switching to ADSB Mode
+2017-06-17 21:05:33.180404 UTC - MainThread - INFO - Switching Mode from BOOT to adsb
+2017-06-17 21:05:33.182998 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: ADSB
+
+2017-06-17 21:05:34.169589 UTC - SERIAL_handler - INFO - Serial Thread Running...
+2017-06-17 21:05:35.181189 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:05:35.434230 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:05:37.183320 UTC - radio - INFO - Radio Thread Running...
+2017-06-17 21:05:37.184331 UTC - radio - INFO - Setup Socket, attempting to connect to GNU Radio....
+2017-06-17 21:05:37.185312 UTC - radio - INFO - Connected to GNU Radio Flowgraph at: 0.0.0.0:52001
+2017-06-17 21:05:47.464127 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:05:47.465032 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:05:48.490756 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:05:48.743447 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:06:03.198934 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:06:03.202349 UTC - Watchdog - INFO - Switching Mode from ADSB to AIS
+2017-06-17 21:06:03.212686 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: AIS
+
+2017-06-17 21:06:05.903261 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:06:05.904328 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:06:06.943876 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:06:07.197312 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:06:24.324510 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:06:24.325993 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:06:25.365473 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:06:25.625281 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:06:33.242609 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:06:33.244899 UTC - Watchdog - INFO - Switching Mode from AIS to ADSB
+2017-06-17 21:06:33.247884 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: ADSB
+
+2017-06-17 21:06:42.759116 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:06:42.759988 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:06:43.823178 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:06:44.077329 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:07:01.243261 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:07:01.244159 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:07:02.280960 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:07:02.541506 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:07:03.275312 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:07:03.276239 UTC - Watchdog - INFO - Switching Mode from ADSB to AIS
+2017-06-17 21:07:03.279395 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: AIS
+
+2017-06-17 21:07:19.638636 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:07:19.641464 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:07:20.702256 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:07:20.955316 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:07:33.295736 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:07:33.296979 UTC - Watchdog - INFO - Switching Mode from AIS to ADSB
+2017-06-17 21:07:33.328969 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: ADSB
+
+2017-06-17 21:07:38.066060 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:07:38.068594 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:07:39.097192 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:07:39.369861 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:07:56.482136 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:07:56.482915 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:07:57.494439 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:07:57.748427 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:08:03.371121 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:08:03.372377 UTC - Watchdog - INFO - Switching Mode from ADSB to AIS
+2017-06-17 21:08:03.374063 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: AIS
+
+2017-06-17 21:08:14.929897 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:08:14.930814 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:08:16.010969 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:08:16.273726 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:08:33.352013 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:08:33.352776 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:08:33.433453 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:08:33.435492 UTC - Watchdog - INFO - Switching Mode from AIS to ADSB
+2017-06-17 21:08:33.441664 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: ADSB
+
+2017-06-17 21:08:34.397673 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:08:34.651265 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:08:51.775168 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:08:51.776069 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:08:52.826254 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:08:53.078736 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:09:03.459979 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:09:03.461756 UTC - Watchdog - INFO - Switching Mode from ADSB to AIS
+2017-06-17 21:09:03.485717 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: AIS
+
+2017-06-17 21:09:10.226688 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:09:10.227557 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:09:11.274008 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:09:11.533744 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:09:28.649761 UTC - SERIAL_handler - INFO - Fault with Serial Port: /dev/ttyACM0
+2017-06-17 21:09:28.650575 UTC - SERIAL_handler - INFO - Unknown Fault: [Errno 5] Input/output error
+2017-06-17 21:09:29.678479 UTC - SERIAL_handler - INFO - Found Serial Port: /dev/ttyACM0
+2017-06-17 21:09:29.933226 UTC - SERIAL_handler - INFO - Opened Serial Port: /dev/ttyACM0
+2017-06-17 21:09:33.505955 UTC - Watchdog - INFO - Watchdog Timed Out...
+2017-06-17 21:09:33.507357 UTC - Watchdog - INFO - Switching Mode from AIS to ADSB
+2017-06-17 21:09:33.518677 UTC - pld_c2 - INFO - Successfully Sent Message to 192.168.20.41:2600: ADSB
+
