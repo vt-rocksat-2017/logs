@@ -7,6 +7,7 @@ import struct
 
 from matplotlib import pyplot as plt
 from matplotlib.collections import LineCollection
+from scipy.interpolate import spline
 
 # Datasets
 vtgs, mgs = [], []         # Frames received by each ground station
@@ -196,6 +197,7 @@ def generate_access_time_plot(id_lists):
 points, bins = generate_access_time_plot([vtgs_ids, mgs_ids, missed_ids])
 
 # Generate the plot using the ranges to build line collections
+fig, ax = plt.subplots()
 ax = plt.axes()
 ax.set_xlim((0, transmitted_ids[-1]))
 ax.set_ylim((0, len(bins)))
@@ -228,6 +230,19 @@ ax.scatter(x, y, s=1)
 
 [x, y] = list(zip(*points))
 ax.scatter(x, y, s=2)
-fig = plt.gcf()
+
+# Calculate the percentage of missed packets for the past 100 packets
+length = 100
+percents = [1.0] * length
+for i in range(length, transmitted_ids[-1]):
+    ids = set(range(i, i + length))
+    received_window = list(ids.intersection(set(unique_ids)))
+    percents.append(float(len(received_window) / length))
+x2 = range(transmitted_ids[-1])
+
+ax2 = ax.twinx()
+ax2.plot(x2, percents, 'r-')
+ax2.set_ylabel('Percent Received (Past %d)' % length, color='r')
+ax2.tick_params('y', colors='r')
 
 plt.show()
