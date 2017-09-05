@@ -5,6 +5,9 @@ import numpy
 import os
 import struct
 
+from matplotlib import pyplot as plt
+from matplotlib.collections import LineCollection
+
 # Datasets
 vtgs, mgs = [], []         # Frames received by each ground station
 unique = []                # Unique frames received
@@ -128,37 +131,103 @@ print ("----------------------------------------")
 
 #-------------------------------------------------------------------------------
 # Print out a list of missed frames based on ranges.
-missed_ids = sorted(list(set(transmitted_ids) - set(unique_ids)))
 print ("Missed Frames:\n")
+def generate_ranges(ids):
+    # This takes a list of IDs and returns a list of ranges (i.e. 34-56, 59-80)
+    # IDs that do not belong to a range are returned as single elements
+    # Example: [3, 4, 6, 7, 8, 10, 12] -> [3, 4], [6, 8], 10, 12
+    tmp = []
+    base, prev = ids[0], ids[0]
+    for i in ids[1:]:
+        # If current == prev+1 it is still in the same range:
+        #   Save the current as prev and continue
+        # Otherwise, a new range has started:
+        #   Append the new range, save i as the base and prev, and continue.
+        # At the end of the list, always save the final range
+        if i != (prev + 1):
+            tmp.append([base, prev]) if base != prev else tmp.append(base)
+            base = i
+        prev = i
+    # Don't forget the final range/value
+    tmp.append([base, prev]) if base != prev else tmp.append(base)
+    return tmp
 
-missed_list = []
-base = missed_ids[0]
-prev = missed_ids[0]
-count_missed = 0
-for i in missed_ids[1:]:
-    # If current == prev+1 it is still in the same range:
-    #   Save the current as prev and continue
-    # Otherwise, a new range has started:
-    #   Append the new range, save i as the base and prev, and continue.
-    # At the end of the list, always save the final range
-    if i != (prev + 1):
-        # New Range!
-        if base == prev:
-            missed_list.append("%d" % base)
-            count_missed += 1
-        else:
-            missed_list.append("%d-%d" % (base, prev))
-            count_missed = count_missed + (prev - base + 1)
-        base = i
-    prev = i
-# Always save the last range
-if base == prev:
-    missed_list.append("%d" % base)
-    count_missed += 1
-else:
-    missed_list.append("%d-%d" % (base, prev))
-    count_missed = count_missed + (prev - base + 1)
-
-print (", ".join(missed_list).join('[]'))
-print (count_missed)
+missed_ids = sorted(list(set(transmitted_ids) - set(unique_ids)))
+assert (len(missed_ids) == missed)
+missed_ranges = generate_ranges(missed_ids)
+print (missed_ranges)
 print ("----------------------------------------")
+
+
+#-------------------------------------------------------------------------------
+print ("Plotting ground station access times...")
+
+# Generate the line segments and points that represent the access time
+def generate_access_time_plot_from_range(id_range, val):
+    """
+    Takes an input range from generate_ranges and creates line segments and
+    data points to represent access times.
+    """
+    segments = []
+    points = []
+
+    for i in id_range:
+        if isinstance(i, list):
+            endpoints = [(i[0], val), (i[1], val)]
+            segments.append(endpoints)
+        else:
+            points.append((i, val))
+    return segments, points
+
+# Generates X/Y plots
+def generate_access_time_plot(id_lists):
+    """
+    Takes multiple lists of ids, and generates X/Y points representing access time
+    """
+    bins = [1]
+    points = []
+    for l in id_lists:
+        mapped = [(x, bins[-1]) for x in l]
+        points += mapped
+        bins.append(bins[-1] + 1)
+    return points, bins
+
+# Generate the scatter plot points for the access times
+points, bins = generate_access_time_plot([vtgs_ids, mgs_ids, missed_ids])
+
+# Generate the plot using the ranges to build line collections
+ax = plt.axes()
+ax.set_xlim((0, transmitted_ids[-1]))
+ax.set_ylim((0, len(bins)))
+ax.set_title("Ground Station Access Times")
+
+labels = ['VTGS', 'MGS', 'Missed']
+ax.set_yticks(bins)
+ax.set_yticklabels(labels, fontsize="12")
+plt.xlabel("Frame ID")
+
+'''
+# Line segment based version
+vtgs_ranges = generate_ranges(vtgs_ids)
+vtgs_segments, vtgs_points = generate_access_time_plot_from_range(vtgs_ranges, 1)
+
+mgs_ranges = generate_ranges(mgs_ids)
+mgs_segments, mgs_points = generate_access_time_plot_from_range(mgs_ranges, 2)
+
+missed_ranges = generate_ranges(missed_ids)
+missed_segments, missed_points = generate_access_time_plot_from_range(missed_ranges, 3)
+
+all_segments = vtgs_segments + mgs_segments + missed_segments
+all_points = vtgs_points + mgs_points + missed_points
+
+[x, y] = list(zip(*all_points))
+segments = LineCollection(all_segments, linestyles='solid')
+ax.add_collection(segments)
+ax.scatter(x, y, s=1)
+'''
+
+[x, y] = list(zip(*points))
+ax.scatter(x, y, s=2)
+fig = plt.gcf()
+
+plt.show()
