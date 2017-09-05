@@ -15,7 +15,7 @@ downlinks = [os.path.join("../command", f) for f in files if "downlink" in f]
 # Load all the packets we did received
 received = []
 f = open("../vtgs/VTGS_MAIN_20170813_093012.493395.log")
-f.readline() # Skip the first line always
+f.readline()    # Skip the first line because it is the logger initialization
 for line in f:
     data = line.split(",")[2].strip()
     if data not in received:
